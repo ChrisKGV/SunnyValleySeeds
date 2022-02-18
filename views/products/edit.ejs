@@ -1,0 +1,14 @@
+<%- include('../partials/head')%>
+
+    <%- include('../partials/navbar')%>
+
+<body>
+    <h1>Edit Product</h1>
+    <form method="POST" action="/products/<%=product.id%>?_method=PATCH">
+        <input type="text" name="product" id="product"><%= product.price %></textarea>
+        <button>Save</button>
+    </form>
+    <a href="/products">Back to products</a>
+</body>
+
+<%- include('../partials/footer') %>

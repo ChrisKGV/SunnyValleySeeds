@@ -1,0 +1,15 @@
+<%- include('../partials/head')%>
+
+    <%- include('../partials/navbar')%>
+<body>
+    <h1>Product id: <%= product.id%></h1>
+    <h2><%= product.product %> - <%= product.price %></h2>
+    <a href="/products">Back to Index</a>
+    <br>
+    <a href="/products/<%=product.id%>/edit">Edit product</a>
+    <form method="POST" action="/products/<%=product.id%>/?_method=DELETE">
+        <button>DELETE</button>
+    </form>
+</body>
+
+<%- include('../partials/footer') %>

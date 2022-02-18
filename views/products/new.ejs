@@ -1,0 +1,21 @@
+<%- include('../partials/head')%>
+
+    <%- include('../partials/navbar')%>
+
+<body>
+    <h1>Add New Product</h1>
+    <form action="/products" method="post">
+        <section>
+            <label for="product">Enter Product:</label>
+            <input type="text" id="username" placeholder="Product" name="product">
+        </section>
+        <section>
+            <label for="price">Price :</label>
+            <input type="text" id="price" placeholder="0.00"name="price"></input>
+        </section>
+        <button>Submit</button>
+    </form>
+    <a href="/products">Index</a>
+</body>
+
+<%- include('../partials/footer') %>
